@@ -1,30 +1,5 @@
 <?php
 
-/*
-
-Provides functionality to access serialised data within version data field
-
-Example usage:
-$decorator = new dataDecorator($serialsied_data);
-
-//get top level item (can be a string or array)
-$decorator->get('user');
-
-//set top level item (if string)
-$decorator->set('new_data', 'new value);
-
-//get item of a top level array item
-$decorator->get('user')->get('address');
-
-//set item of a top level array item
-$decorator->get('user')->set('address', 'new value);
-
-//set item (of ID 5) of sub array item that belongs within a top level item, where ID is
-//referenced by $identifier_field
-$decorator->get('orders', 5)->set('date', 'new value);
-
-*/
-
 namespace App;
 
 class versionDataDecorator implements versionDataDecoratorInterface {
